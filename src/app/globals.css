@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+
+body {
+  background: #0D182A;
+  color: white;
+  font-family: var(--font-work-sans);
+}
+
+h1 {
+  font-family: var(--font-orbitron);
+}
