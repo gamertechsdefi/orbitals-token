@@ -4,9 +4,14 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaTwitter, FaTelegramPlane, FaDiscord, FaMedium } from "react-icons/fa";
+import { FaTwitter, FaTelegramPlane } from "react-icons/fa";
+import type { CSSProperties } from 'react';
 
 export default function Home() {
+  const cssVars: CSSProperties & Record<string, string> = {
+    '--video-opacity': '0.5',
+    '--overlay-opacity': '0.25',
+  };
   return (
     <div>
     <Header />
@@ -15,7 +20,7 @@ export default function Home() {
           id="hero"
           className="relative flex items-start pt-16 md:pt-32 md:justify-center w-full h-screen overflow-hidden"
           // Edit these variables to change opacity (values between 0 and 1)
-          style={{ ['--video-opacity' as any]: '0.5', ['--overlay-opacity' as any]: '0.25' }}
+          style={cssVars}
         >
           {/* Background video (autoplay, muted, loop) */}
           <video
