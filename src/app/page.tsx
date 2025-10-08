@@ -14,7 +14,7 @@ export default function Home() {
   };
   return (
     <div>
-    <Header />
+      <Header />
       <main>
         <section
           id="hero"
@@ -89,25 +89,48 @@ export default function Home() {
             <div className="w-full md:flex-1 flex flex-col gap-3 text-lg md:text-xl mt-4 md:mt-0 px-4 md:px-0">
               <motion.div className="flex justify-between w-full" initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.05 }}>
                 <p>Initial LP</p>
-                <h1>50%</h1>
+                <h1>65%</h1>
               </motion.div>
 
               <motion.div className="flex justify-between w-full" initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.12 }}>
-                <p>Team</p>
-                <h1>20%</h1>
+                <p>Utilities/Partnerships</p>
+                <h1>10%</h1>
               </motion.div>
 
               <motion.div className="flex justify-between w-full" initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.18 }}>
-                <p>Marketing</p>
-                <h1>15%</h1>
+                <p>Initial Burn</p>
+                <h1>10%</h1>
               </motion.div>
 
               <motion.div className="flex justify-between w-full" initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.24 }}>
-                <p>Reserve</p>
+                <p>Marketing</p>
                 <h1>15%</h1>
               </motion.div>
             </div>
           </div>
+
+          <div className="mt-8 flex flex-col items-center">
+            <h1 className="text-3xl md:text-5xl text-green-500">TAXES</h1>
+            <div className="flex flex-col md:flex-row md:gap-12 w-full max-w-4xl items-center md:items-start">
+              <div className="w-full md:flex-1 flex flex-col gap-3 text-lg md:text-xl mt-4 md:mt-0 px-4 md:px-0">
+                <motion.div className="flex justify-between gap-8" initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.05 }}>
+                  <p>Marketing</p>
+                  <h1>2%</h1>
+                </motion.div>
+
+                <motion.div className="flex justify-between gap-8" initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.12 }}>
+                  <p>$TWC Reflection</p>
+                  <h1>2%</h1>
+                </motion.div>
+
+                <motion.div className="flex justify-between gap-8" initial={{ opacity: 0, x: -8 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.18 }}>
+                  <p>Auto Burn</p>
+                  <h1>1%</h1>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+
         </section>
 
         <section className="px-6 md:px-16 py-32 flex flex-col items-center">
@@ -119,12 +142,12 @@ export default function Home() {
               <p className="md:text-lg">Buy or send some $BNB into your wallet (e.g. MetaMask, TrustWallet) </p>
             </div>
 
-             <div className="border-t border-b p-4 md:p-8 rounded-2xl border-green-500">
+            <div className="border-t border-b p-4 md:p-8 rounded-2xl border-green-500">
               <h1 className="text-xl pb-2">ENTER PANCAKESWAP</h1>
               <p className="md:text-lg">Go to the PancakeSwap DEX in the browser. Paste the $ORB contract address in the output field </p>
             </div>
 
-             <div className="border-t border-b p-4 md:p-8 rounded-2xl border-green-500">
+            <div className="border-t border-b p-4 md:p-8 rounded-2xl border-green-500">
               <h1 className="text-xl pb-2">ACQUIRE $ORB</h1>
               <p className="md:text-lg">Enter the amount of BNB you wish to swap for $ORB and confirm the transaction in your wallet. </p>
             </div>
@@ -137,28 +160,55 @@ export default function Home() {
           <div className="max-w-3xl mx-auto flex flex-col gap-4">
             <details className="group border border-neutral-700 rounded-2xl p-4 bg-neutral-900/50">
               <summary className="cursor-pointer list-none text-lg md:text-xl font-medium leading-6 [&::-webkit-details-marker]:hidden">
-                What is ORBITALS about?
+                What is this project all about?
               </summary>
               <div className="mt-3 text-sm md:text-base text-neutral-300">
-                ORBITALS is a token and community project inspired by the journey of growth, connection, and discovery. The site showcases the token, its mission, and how to participate. The homepage features an orbital-themed background and quick links to acquire the $ORB token or view the chart.
+                : Orbital is a community-driven meme token built around the idea that life and crypto both move in cycles. We rise, fall, and keep orbiting toward new discoveries.
               </div>
             </details>
 
             <details className="group border border-neutral-700 rounded-2xl p-4 bg-neutral-900/50">
               <summary className="cursor-pointer list-none text-lg md:text-xl font-medium leading-6 [&::-webkit-details-marker]:hidden">
-                What are the tokenomics?
+                What is the total supply?
               </summary>
               <div className="mt-3 text-sm md:text-base text-neutral-300">
-                The total supply is 100B $ORB. Example allocations include Initial LP (50%), Team (20%), Marketing (15%), and Reserve (15%). Exact allocations and vesting schedules (if any) should be confirmed from the official token documentation or smart contract sources before participating.
+                100,000,000
               </div>
             </details>
 
             <details className="group border border-neutral-700 rounded-2xl p-4 bg-neutral-900/50">
               <summary className="cursor-pointer list-none text-lg md:text-xl font-medium leading-6 [&::-webkit-details-marker]:hidden">
-                How do I buy $ORB?
+                Is there any taxes buys and sells
               </summary>
               <div className="mt-3 text-sm md:text-base text-neutral-300">
-                To buy $ORB you typically need a wallet (e.g. MetaMask, Trust Wallet) with BNB. Visit a DEX like PancakeSwap, select BNB as the input token, paste the $ORB contract address into the output field, set slippage if required, and confirm the swap in your wallet. Always double-check the contract address and use official links.
+               5% Buy and 5% Sell tax
+              </div>
+            </details>
+
+            <details className="group border border-neutral-700 rounded-2xl p-4 bg-neutral-900/50">
+              <summary className="cursor-pointer list-none text-lg md:text-xl font-medium leading-6 [&::-webkit-details-marker]:hidden">
+                Is there a roadmap or a future plan for the project?
+              </summary>
+              <div className="mt-3 text-sm md:text-base text-neutral-300">
+               : The project is a meme project. Utilities may be developed around it in the near future. Right now, we enjoy the orbit.
+              </div>
+            </details>
+
+             <details className="group border border-neutral-700 rounded-2xl p-4 bg-neutral-900/50">
+              <summary className="cursor-pointer list-none text-lg md:text-xl font-medium leading-6 [&::-webkit-details-marker]:hidden">
+                What Chain is Orbital built on?
+              </summary>
+              <div className="mt-3 text-sm md:text-base text-neutral-300">
+               Binance Smart Chain (BSC)
+              </div>
+            </details>
+
+            <details className="group border border-neutral-700 rounded-2xl p-4 bg-neutral-900/50">
+              <summary className="cursor-pointer list-none text-lg md:text-xl font-medium leading-6 [&::-webkit-details-marker]:hidden">
+                Where can I buy Orbital tokens?
+              </summary>
+              <div className="mt-3 text-sm md:text-base text-neutral-300">
+               : You can grab Orbital on decentralized exchanges right after launch. Links will be shared on our official channels. Make sure you’re following the right orbit!
               </div>
             </details>
           </div>
@@ -179,7 +229,7 @@ export default function Home() {
               <FaTelegramPlane className="text-2xl text-cyan-400" />
               <span className="text-sm">Telegram</span>
             </a>
-{/* 
+            {/* 
             <a href="#" aria-label="Discord" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-2 p-4 rounded-2xl bg-neutral-800 hover:bg-neutral-700 transition">
               <FaDiscord className="text-2xl text-violet-400" />
               <span className="text-sm">Discord</span>
