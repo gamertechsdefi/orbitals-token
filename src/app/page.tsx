@@ -48,7 +48,7 @@ export default function Home() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.7, delay: 0.1 }}
               >
-                ORBITALS
+                ORBITAL
               </motion.h1>
 
               <motion.p
