@@ -40,7 +40,7 @@ export default function Home() {
           <div className="absolute inset-0 -z-10" style={{ backgroundColor: 'rgba(0,0,0,var(--overlay-opacity))' }} aria-hidden="true" />
 
           {/* Content above the background */}
-          <div className="relative z-10 text-center px-4">
+          <div className="relative z-10 text-center px-4" id="about">
             <div className="flex flex-col gap-4">
               <motion.h1
                 className="text-6xl md:text-8xl"
@@ -62,17 +62,17 @@ export default function Home() {
 
               <div className="flex gap-4 justify-center">
                 <motion.div whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Link href="" className="font-bold bg-green-700 rounded-2xl text-white px-6 py-3 block">ACQUIRE $ORB</Link>
+                  <Link href="https://pancakeswap.finance/swap?chain=bsc&chainOut=bsc&inputCurrency=BNB&outputCurrency=0x218ce180C6B21A355a55CDbb5B3B3BF7AAd5C8A5&exactAmount=&exactField=INPUT" className="font-bold bg-green-700 rounded-2xl text-white px-6 py-3 block">ACQUIRE $ORB</Link>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 260 }}>
-                  <Link href="" className="font-semibold border-b rounded-2xl px-6 py-3 block border-t border-green-500">$ORB CHART</Link>
+                  <Link href="https://www.firescreener.com/bsc/0x218ce180c6b21a355a55cdbb5b3b3bf7aad5c8a5" className="font-semibold border-b rounded-2xl px-6 py-3 block border-t border-green-500">$ORB CHART</Link>
                 </motion.div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="flex flex-col items-center px-6 py-32 md:px-16">
+        <section className="flex flex-col items-center px-6 py-32 md:px-16" id="tokenomics">
           <h1 className="mb-8 text-5xl md:text-7xl text-green-500">TOKENOMICS</h1>
           <div className="flex flex-col md:flex-row md:gap-12 w-full max-w-4xl items-center md:items-start">
             <motion.div
@@ -131,9 +131,19 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="mt-8 flex flex-row gap-8 items-center">
+            <Link href="https://www.firescreener.com/bsc/0x218ce180c6b21a355a55cdbb5b3b3bf7aad5c8a5" className=" w-20 h-20 flex items-center justify-center border-2 border-neutral-300 p-4 rounded-xl">
+            <Image src="/images/firescreener-logo.png" alt="firescreener" width={50} height={50} />
+            </Link>
+
+            <Link href="https://dexscreener.com/bsc/0x53e23f393559057a8c6191b0da09ff065ed85a6a" className="border-2 border-neutral-300 p-4 rounded-xl w-20 h-20 flex items-center justify-center">
+            <Image src="/images/dexscreener-b.png" alt="dexscreener" width={50} height={50} />
+            </Link>
+          </div>
+
         </section>
 
-        <section className="px-6 md:px-16 py-32 flex flex-col items-center">
+        <section className="px-6 md:px-16 py-32 flex flex-col items-center" id="howtobuy">
           <h1 className="text-green-500 text-5xl md:text-7xl mb-4">HOW TO BUY</h1>
 
           <div className="grid grid-cols-1 gap-8">
@@ -154,7 +164,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-16 py-24">
+        <section className="w-full px-6 md:px-16 py-24" id="faqs">
           <h1 className="text-4xl md:text-5xl text-green-500 text-center mb-8">FAQs</h1>
 
           <div className="max-w-3xl mx-auto flex flex-col gap-4">
@@ -214,7 +224,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-16 py-24 bg-neutral-900/30">
+        <section className="w-full px-6 md:px-16 py-24 bg-neutral-900/30" id="community">
           <h1 className="text-4xl md:text-5xl text-green-500 font-bold text-center mb-8">JOIN THE COMMUNITY</h1>
 
           <p className="max-w-3xl mx-auto text-center text-neutral-300 mb-8">Join our community on social platforms to stay updated, ask questions, and participate in discussions about the project, tokenomics, and roadmap.</p>

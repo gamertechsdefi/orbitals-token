@@ -19,15 +19,15 @@ export default function Header() {
 
             {/* Desktop nav - hidden on small screens */}
             <nav className="hidden md:flex gap-8 items-center">
-                <Link href="#" className="px-4 py-2 rounded-lg bg-neutral-700 border-2 border-neutral-500">ABOUT</Link>
-                <Link href="#" className="px-4 py-2 rounded-lg bg-neutral-700 border-2 border-neutral-500">TOKENOMICS</Link>
-                <Link href="#" className="px-4 py-2 rounded-lg bg-neutral-700 border-2 border-neutral-500">HOW TO BUY</Link>
-                <Link href="#" className="px-4 py-2 rounded-lg bg-neutral-700 border-2 border-neutral-500">COMMUNITY</Link>
+                <Link href="#about" className="px-4 py-2 rounded-lg bg-neutral-700 border-2 border-neutral-500">ABOUT</Link>
+                <Link href="#tokenomics" className="px-4 py-2 rounded-lg bg-neutral-700 border-2 border-neutral-500">TOKENOMICS</Link>
+                <Link href="#howtobuy" className="px-4 py-2 rounded-lg bg-neutral-700 border-2 border-neutral-500">HOW TO BUY</Link>
+                <Link href="#community" className="px-4 py-2 rounded-lg bg-neutral-700 border-2 border-neutral-500">COMMUNITY</Link>
             </nav>
 
             {/* Desktop call-to-action */}
             <div className="hidden md:block">
-                <button className="font-bold text-xl px-8 md:ml-16 py-3 bg-green-700 border-2 rounded-xl border-green-500">BUY NOW</button>
+                <Link href="https://pancakeswap.finance/swap?chain=bsc&chainOut=bsc&inputCurrency=BNB&outputCurrency=0x218ce180C6B21A355a55CDbb5B3B3BF7AAd5C8A5&exactAmount=&exactField=INPUT" className="font-bold text-xl px-8 md:ml-16 py-3 bg-green-700 border-2 rounded-xl border-green-500">BUY NOW</Link>
             </div>
 
             {/* Mobile menu toggle - visible on small screens only (kept at the far right by spacer) */}
@@ -51,14 +51,14 @@ export default function Header() {
             {/* Mobile menu panel - shown when `open` is true */}
             <div className={`md:hidden ${open ? "block" : "hidden"} absolute left-0 right-0 top-full mt-3 bg-neutral-800 border-2 border-neutral-500 rounded-lg p-4 shadow-lg z-20`}>
                 <nav className="flex flex-col gap-3">
-                    <Link href="#" className="px-4 py-2">About</Link>
-                    <Link href="#" className="px-4 py-2">Tokenomics</Link>
-                    <Link href="#" className="px-4 py-2">How to buy</Link>
-                    <Link href="#" className="px-4 py-2 ">Community</Link>
+                    <Link href="#about" className="px-4 py-2">About</Link>
+                    <Link href="#tokenomics" className="px-4 py-2">Tokenomics</Link>
+                    <Link href="#howtobuy" className="px-4 py-2">How to buy</Link>
+                    <Link href="#community" className="px-4 py-2 ">Community</Link>
                 </nav>
 
                 <div className="mt-3">
-                    <button className="w-full font-bold text-lg px-4 py-3 bg-green-700 border-2 rounded-xl border-green-500">BUY NOW</button>
+                    <Link href="https://pancakeswap.finance/swap?chain=bsc&chainOut=bsc&inputCurrency=BNB&outputCurrency=0x218ce180C6B21A355a55CDbb5B3B3BF7AAd5C8A5&exactAmount=&exactField=INPUT" className="w-full font-bold text-lg px-4 py-3 bg-green-700 border-2 rounded-xl border-green-500">BUY NOW</Link>
                 </div>
             </div>
         </header>
